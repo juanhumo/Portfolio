@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior: smooth;}
+
+/************************************* Sección INICIO *************************************/
+
+#start{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), 
+                                rgba(0, 0, 0, 0.6)), 
+                                url(Imagenes/001\ \(10\).jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#start header{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    z-index: 50;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+.header-content h1{
+    color: red; /*buscar mejor color********************************************************************/
+    text-align: center;
+}
+
+.header-content ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.header-content ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    transition: 0.7s;
+}
+
+.header-content ul li a:hover{
+    color: red;
+}
+
+#start .presentation{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#start .presentation h2{
+    font-size: 60px;
+    margin: 25px auto;
+}
+
+#start .presentation h2 span{
+    font-size: 60px;
+    color: red;
+}
+
+#start .presentation p{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+}
+
+#start .presentation a{
+    text-decoration: none;
+    color: white;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: 0.7s;
+}
+
+#start .presentation a:hover{background-color: red;}
+
+.nav-menu{
+    color: white;
+    /*display: none;*/
+}
+
+
+
+/************************************ Sección SOBRE MI ************************************/
+
+#aboutme{
+    display: flex;
+    padding: 100px 15px;
+    margin: auto;
+}
+
+#aboutme .profile-picture{
+    max-width: 400px;
+    margin: auto 80px;
+}
+
+#aboutme .profile-picture img{
+    width: 100%;
+    margin-right: 80px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+}
+
+#aboutme .aboutme{margin: 0 40px;}
+
+#aboutme .aboutme .section-title{
+    font-size: 22px;
+}
+
+#aboutme .aboutme h2{
+    font-size: 34px;
+    margin: 20px 0;
+    /*letter-spacing: 2px;*/
+}
+
+#aboutme .aboutme h2 span{color: red;}
+
+#aboutme .aboutme h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    /*letter-spacing: 1px;*/
+}
+
+#aboutme .aboutme p{
+    font-size: 14px;
+    margin-bottom: 12px;  
+}
+
+#aboutme .aboutme a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: 0.7s;
+}
+
+#aboutme .aboutme a:hover{
+    background-color: red; 
+    color: white
+}
