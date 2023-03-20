@@ -106,12 +106,13 @@ html{scroll-behavior: smooth;}
 
 #aboutme{
     display: flex;
-    padding: 100px 200px 100px 200px;
+    padding: 100px 7vw 100px 7vw;
     margin: auto;
 }
 
 #aboutme .profile-picture{
     max-width: 400px;
+    min-width: 400px;
     margin: auto 80px;
 }
 
@@ -125,10 +126,8 @@ html{scroll-behavior: smooth;}
 
 #aboutme .aboutme{margin: 0 40px;}
 
-.section-title{font-size: 22px;}
-
 #aboutme .aboutme h2{
-    font-size: 34px;
+    font-size: 38px;
     margin: 20px 0;
     /*letter-spacing: 2px;*/
 }
@@ -141,10 +140,16 @@ html{scroll-behavior: smooth;}
     /*letter-spacing: 1px;*/
 }
 
-#aboutme .aboutme p{
+#aboutme .aboutme p {
     font-size: 14px;
-    margin: auto 80px 12px auto;  
+    margin: auto 80px 12px auto;
+    text-align: justify;
 }
+
+
+.section-title{font-size: 25px; margin-bottom: 80px;}
+
+#aboutme .aboutme h1{margin-bottom: 40px;}
 
 #aboutme .aboutme a{
     display: inline-block;
@@ -165,7 +170,7 @@ html{scroll-behavior: smooth;}
 /************************************ Sección SERVICIOS ***********************************/
 
 #services{
-    padding: 100px 200px 100px 200px;
+    padding: 100px 7vw 100px 7vw;
     text-align: center;
     background-color: rgb(206, 205, 205);  
 }
@@ -211,7 +216,7 @@ html{scroll-behavior: smooth;}
 /*********************************** Sección HABILIDADES **********************************/
 
 #skills{
-    padding: 100px 200px 100px 200px;
+    padding: 100px 7vw 100px 7vw;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
@@ -242,28 +247,27 @@ html{scroll-behavior: smooth;}
 
 #skills .skills-container .bar .fraction{
     background-color: #2d2d2d;
-    
-    width: 1.2vw;
+    width: 1.4vw;
     height: 3.2vh;
     margin-right: 2px;
 }
 
 /************************************ Sección PROYECTOS ***********************************/
 
-#proyects{
-    padding: 100px 200px 100px 200px;
+#projects{
+    padding: 100px 7vw 100px 7vw;
     margin: auto;
 }
 
-#proyects .section-title{text-align: center;}
+#projects .section-title{text-align: center;}
 
-#proyects .row{
+#projects .row{
     display: flex;
     justify-content: space-between;
     margin: 30px 80px;
 }
 
-#proyects .row .proyect{
+#projects .row .project{
     max-width: 400px;
     border: 1px solid black;
     margin: 0 10px;
@@ -271,7 +275,7 @@ html{scroll-behavior: smooth;}
     overflow: hidden;
 }
 
-#proyects .row .proyect img{
+#projects .row .project img{
     width: 100%;
     height: 100%;
     object-fit:cover;
@@ -279,9 +283,9 @@ html{scroll-behavior: smooth;}
     transition: 0.5s;
 }
 
-#proyects .row .proyect:hover img {filter: grayscale(0);}
+#projects .row .project:hover img {filter: grayscale(0);}
 
-#proyects .row .proyect .proyect-info{
+#projects .row .project .project-info{
     position: absolute;
     left: 0;
     bottom: -100px;
@@ -289,12 +293,57 @@ html{scroll-behavior: smooth;}
     width: 100%;
     color: red;
     font-size: 22px;
-    padding: 20px;
+    padding: 10px;
     transition: 0.5s
 }
 
-#proyects .row .proyect:hover .proyect-info{
+#projects .row .project:hover .project-info{
     bottom: 0;
     cursor: pointer;
 }
 
+
+/************************************ Sección CONTACTO ************************************/
+
+#contact{
+    padding: 100px 7vw 100px 7vw;
+    text-align: center;
+}
+
+#contact .form-container .name-mail-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#contact .form-container .subject-container{margin: auto 80px 15px 80px;}
+#contact .form-container .message-container{margin: auto 80px 15px 80px;}
+
+#contact .form-container input,
+#contact .form-container textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+#contact .form-container .name-mail-container input {width: 100%;}
+#contact .form-container .name-mail-container .name {margin-left: 80px; margin-right: 7px;}
+#contact .form-container .name-mail-container .mail {margin-right: 80px; margin-left: 7px;}
+#contact .form-container .subject-container .subject {width: 100%;}
+#contact .form-container .message-container .message {width: 100%;}
+
+#contact .send-message{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.7s;
+    padding: 10px 15px;
+}
+
+#contact .send-message:hover{
+    background-color: red;
+    color: white;
+}

@@ -26,16 +26,18 @@ let cssSK = document.getElementById("css-skill");
 let javascriptSK = document.getElementById("javascript-skill");
 let figmaSK = document.getElementById("figma-skill");
 let gitSK = document.getElementById("git-skill");
+let bootstrapSK = document.getElementById("bootstrap-skill");
 createBar(htmlSK, 17);
 createBar(cssSK, 17);
 createBar(javascriptSK, 17);
 createBar(figmaSK, 17);
 createBar(gitSK, 17);
+createBar(bootstrapSK, 17);
 
 
 //-------------------------- Animación de las barras de habilidades --------------------------//
 
-let skillLevels = [-1,-1,-1,-1,-1];          // arreglo con la cantidad de barras de c/skill
+let skillLevels = [-1,-1,-1,-1,-1,-1];          // arreglo con la cantidad de barras de c/skill
 let aux  = false;
 
 // Función para pintar barritas individuales en cada skill bar
@@ -74,6 +76,9 @@ function skillsEffect(){
         }, 100);
         const intervalGIT = setInterval(function(){
             paintBar(gitSK, 16, 4, intervalGIT);
+        }, 100);
+        const intervalBOOTSTRAP = setInterval(function(){
+            paintBar(bootstrapSK, 7, 5, intervalBOOTSTRAP);
         }, 100);
     }
 }
