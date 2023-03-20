@@ -1,3 +1,16 @@
+//---Función para cambiar color de la barra de nav según que sección se esté viendo ---//
+
+window.addEventListener('scroll', function() {
+    const navLinks = document.querySelectorAll('li a');
+    const sections = document.querySelectorAll('body section');
+    const currentSectionIndex = sections.length - [...sections].reverse().findIndex(section => window.scrollY >= section.offsetTop - 45) - 1;
+  
+    navLinks.forEach(link => link.classList.remove('active'));
+    navLinks[currentSectionIndex].classList.add('active');
+  });
+
+
+
 //-------------------------- Barras de habilidades --------------------------//
 
 function createBar(id_bar, num_bars){
@@ -69,4 +82,9 @@ function skillsEffect(){
 // Aplico la función para aplicar los efectos al detectarse el escroleo del mouse
 
 window.onscroll = function(){skillsEffect();}
+
+
+
+
+
 

@@ -32,7 +32,7 @@ html{scroll-behavior: smooth;}
 }
 
 .header-content h1{
-    color: red; /*buscar mejor color********************************************************************/
+    color: red; 
     text-align: center;
 }
 
@@ -46,11 +46,16 @@ html{scroll-behavior: smooth;}
     text-decoration: none;
     color: white;
     margin: 0 10px;
-    transition: 0.7s;
 }
 
 .header-content ul li a:hover{
     color: red;
+    transition: 0.7s;
+}
+
+.header-content ul li a.active{
+    color: red;
+    transition: 0.7s;
 }
 
 #start .presentation{
@@ -101,7 +106,7 @@ html{scroll-behavior: smooth;}
 
 #aboutme{
     display: flex;
-    padding: 100px 15px;
+    padding: 100px 200px 100px 200px;
     margin: auto;
 }
 
@@ -160,7 +165,7 @@ html{scroll-behavior: smooth;}
 /************************************ Sección SERVICIOS ***********************************/
 
 #services{
-    padding: 100px 15px;
+    padding: 100px 200px 100px 200px;
     text-align: center;
     background-color: rgb(206, 205, 205);  
 }
@@ -206,29 +211,29 @@ html{scroll-behavior: smooth;}
 /*********************************** Sección HABILIDADES **********************************/
 
 #skills{
-    padding: 80px 0 100px 0;
+    padding: 100px 200px 100px 200px;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
+
 #skills .skills-container .row{
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    justify-content:space-between;
+    margin: 30px 80px;
 }
 
-#skills .skills-container .row .column{
-    width: 45%;
-    text-align: left;
-}
+#skills .skills-container .row .column{text-align: left;}
 
 #skills .skills-container .row .column .bar-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #skills .skills-container .bar{
     display: flex;
+    justify-content: center;
     border: 1px solid red;
     padding: 2px;
     border-radius: 3px;
@@ -237,7 +242,59 @@ html{scroll-behavior: smooth;}
 
 #skills .skills-container .bar .fraction{
     background-color: #2d2d2d;
-    width: 20px;
-    height: 30px;
+    
+    width: 1.2vw;
+    height: 3.2vh;
     margin-right: 2px;
 }
+
+/************************************ Sección PROYECTOS ***********************************/
+
+#proyects{
+    padding: 100px 200px 100px 200px;
+    margin: auto;
+}
+
+#proyects .section-title{text-align: center;}
+
+#proyects .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 80px;
+}
+
+#proyects .row .proyect{
+    max-width: 400px;
+    border: 1px solid black;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#proyects .row .proyect img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+#proyects .row .proyect:hover img {filter: grayscale(0);}
+
+#proyects .row .proyect .proyect-info{
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    color: red;
+    font-size: 22px;
+    padding: 20px;
+    transition: 0.5s
+}
+
+#proyects .row .proyect:hover .proyect-info{
+    bottom: 0;
+    cursor: pointer;
+}
+
