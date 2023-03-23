@@ -140,7 +140,6 @@ html{scroll-behavior: smooth;}
 #aboutme .aboutme h2{
     font-size: 38px;
     margin: 20px 0;
-    /*letter-spacing: 2px;*/
 }
 
 #aboutme .aboutme h2 span{color: red;}
@@ -148,7 +147,6 @@ html{scroll-behavior: smooth;}
 #aboutme .aboutme h3{
     font-size: 18px;
     margin-bottom: 20px;
-    /*letter-spacing: 1px;*/
 }
 
 #aboutme .aboutme p {
@@ -426,15 +424,14 @@ footer a{
         padding: 20px;
     }
 
-    
+    #aboutme .aboutme{margin: 0 20px;}
  
-    #aboutme .aboutme h2{margin: 20px 10px; text-align: left;}
+    #aboutme .aboutme h2{margin: 20px auto; text-align: left;}
     
-    #aboutme .aboutme h3{margin-left: 10px; text-align: left;}
+    #aboutme .aboutme h3{margin-left: auto; text-align: left;}
 
-    #aboutme .aboutme p {margin: auto 10px; text-align: justify;}
+    #aboutme .aboutme p {margin: auto auto; text-align: justify;}
 
-    
 
     #services {padding: 100px 0.5vw;}
 
