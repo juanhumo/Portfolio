@@ -426,11 +426,11 @@ footer a{
 
     #aboutme .aboutme{margin: 0 20px;}
  
-    #aboutme .aboutme h2{margin: 20px auto; text-align: left;}
+    #aboutme .aboutme h2{margin: 20px 20px; text-align: left;}
     
-    #aboutme .aboutme h3{margin-left: auto; text-align: left;}
+    #aboutme .aboutme h3{margin-left: 20px; text-align: left;}
 
-    #aboutme .aboutme p {margin: auto auto; text-align: justify;}
+    #aboutme .aboutme p {margin: auto 20px; text-align: justify;}
 
 
     #services {padding: 100px 0.5vw;}
