@@ -266,7 +266,7 @@ html{scroll-behavior: smooth;}
 /************************************ Sección PROYECTOS ***********************************/
 
 #projects{
-    padding: 100px 7vw 100px 7vw;
+    padding: 100px 7vw;
     margin: auto;
 }
 
@@ -460,7 +460,7 @@ footer a{
     #skills .skills-container .row .column {margin: 10px auto;}
 
     #skills .skills-container .bar .fraction{
-        width: 20px;
+        width: 15px;
         height: 5.2vh;
     }
 
