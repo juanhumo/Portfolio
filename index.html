@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="author" content="Juan Manuel Barneaud">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -18,8 +18,8 @@
     <!--****************************** Sección de inicio del portfolio ******************************-->
     <section id="start">
         <header>
-            <div class="header-content">
-                <h1>&lt;JMB/&gt;</h1>
+            <div id="header-content" class="">
+                <h1>{JMB}</h1>
                 <ul>
                     <li><a href="#start">START</a></li>
                     <li><a href="#aboutme">ABOUT ME</a></li>
@@ -31,7 +31,7 @@
                 </ul>
 
                 <!-- Ícono para navegación responsiva en menor resolución -->
-                <div class="nav-menu">
+                <div class="nav-menu" onclick="deployMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -234,6 +234,14 @@
         </div>
     </section>
 
+    <footer>
+        <h1 class="thanks-bye">Thanks for passing by!</h1>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 

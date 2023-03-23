@@ -91,5 +91,14 @@ window.onscroll = function(){skillsEffect();}
 
 
 
+//------------ Función para mostrar el menú responsivo en menor resolución ------------//
 
+function deployMenu(){
+    var header = document.getElementById("header-content");
+    if(header.className === ""){
+        header.className = "header-responsive";
+    }
+        else {header.className = "";}  
+        console.log('click')      
+}
 

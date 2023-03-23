@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Righteous&family=Source+Sans+Pro:wght@600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{scroll-behavior: smooth;}
+
+.section-title{
+    font-size: 40px;
+    margin-bottom: 80px;
+    font-weight: 800;
+}
 
 /************************************* Sección INICIO *************************************/
 
@@ -24,36 +33,37 @@ html{scroll-behavior: smooth;}
     z-index: 50;
 }
 
-.header-content{
+#header-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 8px 15px;
 }
 
-.header-content h1{
+#header-content h1{
+    font-size: 30px;
     color: red; 
     text-align: center;
+    font-weight: bold;
 }
 
-.header-content ul{
+#header-content ul{
     display: flex;
     list-style: none;
     align-items: center;
 }
 
-.header-content ul li a{
+#header-content ul li a{
     text-decoration: none;
     color: white;
     margin: 0 10px;
-}
-
-.header-content ul li a:hover{
-    color: red;
+    font-weight: 800;
     transition: 0.7s;
 }
 
-.header-content ul li a.active{
+#header-content ul li a:hover {color: red;}
+
+#header-content ul li a.active{
     color: red;
     transition: 0.7s;
 }
@@ -63,6 +73,7 @@ html{scroll-behavior: smooth;}
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     color: white;
 }
@@ -97,7 +108,7 @@ html{scroll-behavior: smooth;}
 
 .nav-menu{
     color: white;
-    /*display: none;*/
+    display: none;
 }
 
 
@@ -106,7 +117,7 @@ html{scroll-behavior: smooth;}
 
 #aboutme{
     display: flex;
-    padding: 100px 7vw 100px 7vw;
+    padding: 100px 7vw;
     margin: auto;
 }
 
@@ -145,9 +156,6 @@ html{scroll-behavior: smooth;}
     margin: auto 80px 12px auto;
     text-align: justify;
 }
-
-
-.section-title{font-size: 25px; margin-bottom: 80px;}
 
 #aboutme .aboutme h1{margin-bottom: 40px;}
 
@@ -216,7 +224,7 @@ html{scroll-behavior: smooth;}
 /*********************************** Sección HABILIDADES **********************************/
 
 #skills{
-    padding: 100px 7vw 100px 7vw;
+    padding: 100px 7vw;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
@@ -228,7 +236,10 @@ html{scroll-behavior: smooth;}
     margin: 30px 80px;
 }
 
-#skills .skills-container .row .column{text-align: left;}
+#skills .skills-container .row .column {
+    text-align: left; 
+    font-weight: 800;
+}
 
 #skills .skills-container .row .column .bar-container{
     display: flex;
@@ -247,8 +258,8 @@ html{scroll-behavior: smooth;}
 
 #skills .skills-container .bar .fraction{
     background-color: #2d2d2d;
-    width: 1.4vw;
-    height: 3.2vh;
+    width: 1.6vw;
+    height: 4.2vh;
     margin-right: 2px;
 }
 
@@ -264,15 +275,21 @@ html{scroll-behavior: smooth;}
 #projects .row{
     display: flex;
     justify-content: space-between;
-    margin: 30px 80px;
+    margin: 3vw 80px;
 }
 
 #projects .row .project{
     max-width: 400px;
     border: 1px solid black;
-    margin: 0 10px;
+    margin: 0 1.5vw;
     position: relative;
     overflow: hidden;
+    transition: 0.9s;
+}
+
+#projects .row .project:hover{
+    transform: scale(1.1);
+    z-index: 100;
 }
 
 #projects .row .project img{
@@ -288,7 +305,7 @@ html{scroll-behavior: smooth;}
 #projects .row .project .project-info{
     position: absolute;
     left: 0;
-    bottom: -100px;
+    bottom: -150px;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     color: red;
@@ -306,7 +323,7 @@ html{scroll-behavior: smooth;}
 /************************************ Sección CONTACTO ************************************/
 
 #contact{
-    padding: 100px 7vw 100px 7vw;
+    padding: 100px 7vw;
     text-align: center;
 }
 
@@ -346,4 +363,116 @@ html{scroll-behavior: smooth;}
 #contact .send-message:hover{
     background-color: red;
     color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 5px;
+    font-size: 25px;
+}
+
+
+
+
+/************************************* RESPONSIVIDAD **************************************/
+
+@media screen and (max-width: 800px){
+
+    #header-content ul {display: none;}
+
+    #header-content{
+        justify-content: space-between;
+        align-items: normal;
+    }
+
+    .nav-menu{display: block;}
+
+    .nav-menu:hover{
+        cursor: pointer;
+        color: red;
+        transition: 0.7s;
+    }
+
+    div.header-responsive{
+        display:flex;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 0;
+    }
+
+    div.header-responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+
+    #aboutme{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 0.5vw;
+    }
+
+    #aboutme .profile-picture img{
+        margin-right: auto;
+        padding: 20px;
+    }
+
+    
+ 
+    #aboutme .aboutme h2{margin: 20px 40px; text-align: left;}
+    
+    #aboutme .aboutme h3{margin-left: 40px; text-align: left;}
+
+    #aboutme .aboutme p {margin: auto 40px; text-align: justify;}
+
+    
+
+    #services {padding: 100px 0.5vw;}
+
+    #services .services-container{
+        flex-direction: column;
+        margin: 30px 30px;
+        align-items: center;
+    }
+
+    #services .services-container .service{
+        max-width: 400px;
+        margin: 10px 0;
+    }    
+
+    #skills{padding: 100px 0.5vw;}
+       
+    #skills .skills-container .row{
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 30px;
+    }
+    
+    #skills .skills-container .row .column {margin: 10px auto;}
+
+    #skills .skills-container .bar .fraction{
+        width: 20px;
+        height: 5.2vh;
+    }
+
+    #projects{padding: 100px 0.5vw;}
+    
+    #projects .row{
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 30px;
+    }
+    
+    #projects .row .project {margin: 10px 1.5vw;}
+
+    #contact{padding: 100px 0.5vw;} 
 }
