@@ -457,7 +457,7 @@ footer a{
     #skills .skills-container .row .column {margin: 10px auto;}
 
     #skills .skills-container .bar .fraction{
-        width: 15px;
+        width: 16px;
         height: 5.2vh;
     }
 
@@ -472,4 +472,10 @@ footer a{
     #projects .row .project {margin: 10px 1.5vw;}
 
     #contact{padding: 100px 0.5vw;} 
+
+    #contact .form-container .subject-container{margin: auto 40px 15px 40px;}
+    #contact .form-container .message-container{margin: auto 40px 15px 40px;}
+    #contact .form-container .name-mail-container .name {margin-left: 40px; margin-right: 7px;}
+    #contact .form-container .name-mail-container .mail {margin-right: 40px; margin-left: 7px;}
+
 }
