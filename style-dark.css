@@ -13,9 +13,13 @@ html{scroll-behavior: smooth;}
     font-size: 40px;
     margin-bottom: 80px;
     font-weight: 800;
+    color: white;
 }
 
 span.highlight {color: red;}
+
+a:visited {color: #ffffff;}
+a:link {color:white;}
 
 /************************************* Sección INICIO *************************************/
 
@@ -98,10 +102,11 @@ span.highlight {color: red;}
 
 #start .presentation a{
     text-decoration: none;
+    font-weight: 500;
     color: white;
     margin: 25px;
     padding: 20px 25px;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 50px;
     transition: 0.7s;
 }
@@ -121,6 +126,8 @@ span.highlight {color: red;}
     display: flex;
     padding: 100px 7vw;
     margin: auto;
+    background-color: #1f232d;
+    color: white;
 }
 
 #aboutme .profile-picture{
@@ -133,7 +140,7 @@ span.highlight {color: red;}
     width: 100%;
     margin-right: 80px;
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color: #4d5461;
     border-radius: 20px;
 }
 
@@ -162,8 +169,9 @@ span.highlight {color: red;}
 #aboutme .aboutme a{
     display: inline-block;
     text-decoration: none;
+    font-weight: 400;
     padding: 10px 20px;
-    border: 1px solid black;
+    border: 2px solid white;
     border-radius: 30px;
     margin-top: 30px;
     transition: 0.7s;
@@ -175,12 +183,13 @@ span.highlight {color: red;}
 }
 
 
+
 /************************************ Sección SERVICIOS ***********************************/
 
 #services{
     padding: 100px 7vw 100px 7vw;
     text-align: center;
-    background-color: rgb(206, 205, 205);  
+    background-color:  #313743;  
 }
 
 #services .services-container{
@@ -191,16 +200,17 @@ span.highlight {color: red;}
 
 #services .services-container .service{
     max-width: 400px;
-    background-color: white;
+    background-color: #4d5461;
     padding: 30px;
     margin: 0 5px;
+    color: white;
     border-radius: 10px;
     transition: 0.2s;
 }
 
 #services .services-container .service:hover{
-    box-shadow: 10px 10px 20px #4e4e4e, 
-               -10px -10px 20px #989898;
+    box-shadow: 10px 10px 30px 5px #989898, 
+               -10px -10px 30px 5px #989898;
 }
 
 #services .services-container .icon{
@@ -209,7 +219,7 @@ span.highlight {color: red;}
     height: 60px;
     padding: 20px;
     border-radius: 50%;
-    background-color: #d3d3d3;
+    background-color: #313743;
     margin-bottom: 20px;
 }
 
@@ -226,7 +236,7 @@ span.highlight {color: red;}
 #skills{
     padding: 100px 7vw;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-color:  #1f232d;
 }
 
 
@@ -239,6 +249,7 @@ span.highlight {color: red;}
 #skills .skills-container .row .column {
     text-align: left; 
     font-weight: 800;
+    color: white;
 }
 
 #skills .skills-container .row .column .bar-container{
@@ -268,6 +279,7 @@ span.highlight {color: red;}
 #projects{
     padding: 100px 7vw;
     margin: auto;
+    background-color: #313743;
 }
 
 #projects .section-title{text-align: center;}
@@ -325,6 +337,7 @@ span.highlight {color: red;}
 #contact{
     padding: 100px 7vw;
     text-align: center;
+    background-color: #1f232d;
 }
 
 #contact .form-container .name-mail-container{
