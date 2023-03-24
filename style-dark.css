@@ -53,6 +53,8 @@ a:link {color:white;}
     font-weight: bold;
 }
 
+#header-content .sections {display: flex;}
+
 #header-content ul{
     display: flex;
     list-style: none;
@@ -425,7 +427,8 @@ footer a{
 
     div.header-responsive ul{
         display: block !important;
-        text-align: center;
+        text-align:left;
+        margin: 0 1px;
     }
 
     #aboutme{

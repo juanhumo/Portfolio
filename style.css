@@ -49,6 +49,8 @@ span.highlight {color: red;}
     font-weight: bold;
 }
 
+#header-content .sections {display: flex;}
+
 #header-content ul{
     display: flex;
     list-style: none;
