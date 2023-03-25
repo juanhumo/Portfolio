@@ -370,7 +370,7 @@ a:link {color:white;}
 
 #contact .send-message{
     display: block;
-    margin: auto;
+    margin: 80px auto;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
