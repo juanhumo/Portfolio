@@ -221,18 +221,18 @@
     <section id="contact">
         <h3 class="section-title">CONTACT <span class="highlight">ME</span></h3>
         <div class="form-container">
-            <form action="">
+            <form id="my-form" action="https://formspree.io/f/xlekwawl" method="POST">
                 <div class="name-mail-container">
-                    <input type="text" placeholder="Full name" class="name" required>
-                    <input type="text" placeholder="Mail" class="mail" required>
+                    <input type="text" placeholder="Full name" class="name" name="name" required>
+                    <input type="text" placeholder="Mail" class="mail" name="mail" required>
                 </div>
                 <div class="subject-container">
-                    <input type="text" placeholder="Subject" class="subject">
+                    <input type="text" placeholder="Subject" class="subject" name="subject">
                 </div>
                 <div class="message-container">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message" class="message"></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" class="message"></textarea>
                 </div>
-                <input type="submit" value="Send message" class="send-message">
+                <input type="submit" id="send-message" value="Send message" class="send-message" onclick="messageSendedAlert()">
             </form>
         </div>
     </section>
@@ -245,7 +245,9 @@
             <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
         </div>
     </footer>
-    <script src="app.js"></script>
-</body>
 
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
 </html>

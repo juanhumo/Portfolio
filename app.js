@@ -102,3 +102,36 @@ function deployMenu(){
         console.log('click')      
 }
 
+
+//------------------ Función que envía mail mediante formspree.io -------------------//
+
+function messageSendedAlert(){
+  
+      var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+         
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {'Accept': 'application/json'}
+          }).then(response => {
+            if (response.ok) {form.reset()} 
+          })
+        }
+        form.addEventListener("submit", handleSubmit)
+
+
+//------------ Función que muestra un cartel luego de envíar el mensaje -------------//
+
+    Swal.fire({
+        position: 'top-end',
+        toast: true,
+        icon: 'success',
+        title: 'Message corretly sent',
+        showConfirmButton: false,
+        timer: 4000
+      });
+}
