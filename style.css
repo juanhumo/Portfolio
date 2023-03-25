@@ -96,6 +96,7 @@ span.highlight {color: red;}
     max-width: 700px;
     margin: 25px auto;
     font-size: 18px;
+    font-weight: 600;
 }
 
 #start .presentation a{
@@ -210,9 +211,10 @@ span.highlight {color: red;}
     display: inline-block;
     width: 60px;
     height: 60px;
-    padding: 20px;
+    padding: 18px 10px;
     border-radius: 50%;
     background-color: #d3d3d3;
+    color: #d12e36;
     margin-bottom: 20px;
 }
 

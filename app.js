@@ -105,7 +105,7 @@ function deployMenu(){
 
 //------------------ Función que envía mail mediante formspree.io -------------------//
 
-function messageSendedAlert(){
+function sendMail(){
   
       var form = document.getElementById("my-form");
         
@@ -121,17 +121,39 @@ function messageSendedAlert(){
             if (response.ok) {form.reset()} 
           })
         }
-        form.addEventListener("submit", handleSubmit)
-
+       form.addEventListener("submit", handleSubmit);
+}
 
 //------------ Función que muestra un cartel luego de envíar el mensaje -------------//
 
-    Swal.fire({
-        position: 'top-end',
-        toast: true,
-        icon: 'success',
-        title: 'Message corretly sent',
-        showConfirmButton: false,
-        timer: 4000
-      });
+function sendAndAlert(){
+
+var nameValue = document.querySelector('input[name="name"]').value;
+var mailValue = document.querySelector('input[name="email"]').value;
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (nameValue === '' || mailValue === '') {
+    alertText = 'Obligatory field missing';
+    iconType = 'error';
+  }
+
+    else if (!emailRegex.test(mailValue)) {
+        alertText = 'Invalid mail adress';
+        iconType = 'error';
+    }
+
+    else{
+        alertText = 'Message sent corretly';
+        iconType = 'success';
+        sendMail();
+    }
+
+Swal.fire({
+    position: 'top-end',
+    toast: true,
+    icon: iconType,
+    title: alertText,
+    showConfirmButton: false,
+    timer: 4000
+});
 }
