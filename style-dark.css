@@ -69,11 +69,26 @@ a:link {color:white;}
     transition: 0.7s;
 }
 
-#header-content ul li a:hover {color: red;}
+#header-content ul li a:hover{color: red;}
 
 #header-content ul li a.active{
     color: red;
     transition: 0.7s;
+}
+
+div.language{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+div#flags{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    cursor: pointer;
+    width: 80px;
 }
 
 #start .presentation{
@@ -367,6 +382,11 @@ a:link {color:white;}
 #contact .form-container .name-mail-container .mail {margin-right: 80px; margin-left: 7px;}
 #contact .form-container .subject-container .subject {width: 100%;}
 #contact .form-container .message-container .message {width: 100%;}
+
+input::placeholder, textarea::placeholder{
+    font-size: 18px;
+    font-weight: 600;
+}
 
 #contact .send-message{
     display: block;

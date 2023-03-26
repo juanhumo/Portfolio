@@ -10,7 +10,6 @@ window.addEventListener('scroll', function() {
   });
 
 
-
 //-------------------------- Barras de habilidades --------------------------//
 
 function createBar(id_bar, num_bars){
@@ -60,7 +59,7 @@ function paintBar(id_bar, number, index, interval){
 function skillsEffect(){
     var skills = document.getElementById("skills");
     var skills_distance = window.innerHeight - skills.getBoundingClientRect().top;
-    if(skills_distance >= 300 && aux == false){
+    if(skills_distance >= 500 && aux == false){
         aux = true;
         const intervalHTML = setInterval(function(){
             paintBar(htmlSK, 17, 0, intervalHTML);
@@ -102,6 +101,16 @@ function deployMenu(){
         console.log('click')      
 }
 
+//------------------- Función para mostrar los lenguajes disponible -------------------//
+
+function showLang() {
+    var flag = document.getElementById("flags");
+    if (flag.style.display === "block") {
+        flag.style.display = "none";
+    } else {
+        flag.style.display = "block";
+        }
+}
 
 //------------------ Función que envía mail mediante formspree.io -------------------//
 
