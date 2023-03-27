@@ -97,8 +97,7 @@ function deployMenu(){
     if(header.className === ""){
         header.className = "header-responsive";
     }
-        else {header.className = "";}  
-        console.log('click')      
+        else {header.className = "";}       
 }
 
 //------------------- Función para mostrar los lenguajes disponible -------------------//
@@ -111,6 +110,19 @@ function showLang() {
         flag.style.display = "block";
         }
 }
+
+
+//--------------------- Función para mostrar e mail en el footer ----------------------//
+
+function showMail() {
+    var mailFooter = document.getElementById("mail-footer");
+    if (mailFooter .style.display === "block") {
+        mailFooter .style.display = "none";
+    } else {
+        mailFooter .style.display = "block";
+        }
+}
+
 
 //------------------ Función que envía mail mediante formspree.io -------------------//
 

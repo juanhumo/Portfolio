@@ -63,7 +63,7 @@
         </div>
         <div class="aboutme">
             <h1 class="section-title">SOBRE <span class="highlight">MI</span></h1>
-            <h2>Hola, mi nombre es <span>Juan Manuel Barneaud</span></h2>
+            <h2>Hola, mi nombre es <span class="highlight">Juan Manuel Barneaud</span></h2>
             <h3>DESARROLLADOR WEB FRONT-END</h3>
             <p>Soy un desarrollador auto didacta y entusiasta, siempre buscando una oportunidad para demostrar mi
                 potencial. También soy un estudiante avanzado de Bioingeniería a punto de obtener mi diploma. Me 
@@ -82,23 +82,23 @@
         <div class="services-container">
             <div class="service">
                 <span class="icon"><i class="fa-solid fa-code fa-2xl"></i></span>
-                <h4>Website development</h4>
+                <h4>Desarrollo web</h4>
                 <hr>
-                <p>Your custome web page coded according to your specifications</p>
+                <p>Su página web a medida de acuerdo a sus especificaciones</p>
             </div>
 
             <div class="service">
                 <span class="icon"><i class="fa-solid fa-pen-to-square fa-2xl"></i></span>
-                <h4>Website design</h4>
+                <h4>Diseño web</h4>
                 <hr>
-                <p>Attractive designs that will catch they eye to help market your brand</p>
+                <p>Diseños atractivos que atraparán la mirada para ayudar a posicionar su marca en el mercado</p>
             </div>
 
             <div class="service">
                 <span class="icon"><i class="fa-solid fa-mobile-screen fa-shake fa-2xl"></i></span>
-                <h4>Responsive design</h4>
+                <h4>Diseño responsivo</h4>
                 <hr>
-                <p>Your web will look good, work and be fuctional in all devices</p>
+                <p>Su web se verá bien y será funcional en cualquier dispositivo</p>
             </div>
         </div>
     </section>
@@ -107,7 +107,7 @@
     <!--********************************** Sección Habilidades *********************************-->
 
     <section id="skills">
-        <h3 class="section-title">MY <span class="highlight">SKILLS</span></h3>
+        <h3 class="section-title">MIS <span class="highlight">HABILIDADES</span></h3>
         <div class="skills-container">
             <div class="row">
                 <div class="column">
@@ -173,7 +173,7 @@
     <!--********************************** Sección Proyectos **********************************-->
 
     <section id="projects">
-        <h3 class="section-title">MY <span class="highlight">PROJECTS</span></h3>
+        <h3 class="section-title">MIS <span class="highlight">PROYECTOS</span></h3>
         <div class="row">
             <div class="project">
                 <img src="Imagenes/proyecto01.jpg" alt="Proyecto03">
@@ -224,33 +224,37 @@
 
     <!--************************************* Sección Contacto ************************************-->
     <section id="contact">
-        <h3 class="section-title">CONTACT <span class="highlight">ME</span></h3>
+        <h3 class="section-title">CONTACTA <span class="highlight">CONMIGO</span></h3>
         <div class="form-container">
             <form id="my-form" action="https://formspree.io/f/xlekwawl" method="POST">
                 <div class="name-mail-container">
-                    <input type="text" placeholder="&#x1F464;  Full name" class="name" name="name" required>
+                    <input type="text" placeholder="&#x1F464;  Nombre" class="name" name="name" required>
                     <input type="email" placeholder="&#x1F4E7;  Mail" class="mail" name="email" required>
                 </div>
                 <div class="subject-container">
-                    <input type="text" placeholder="&#x1F4EA;  Subject" class="subject" name="subject">
+                    <input type="text" placeholder="&#x1F4EA;  Tema" class="subject" name="subject">
                 </div>
                 <div class="message-container">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="&#x1F4AC;  Your message"
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="&#x1F4AC;  Su mensaje"
                         class="message" spellcheck="true" lang="en"></textarea>
                 </div>
-                <input type="submit" id="send-message" value="Send message" class="send-message"
+                <input type="submit" id="send-message" value="Enviar mensaje" class="send-message"
                     onclick="sendAndAlert()">
             </form>
         </div>
     </section>
 
     <footer>
-        <h1 class="thanks-bye">Thanks for passing by!</h1>
         <div class="social">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.linkedin.com/in/juan-manuel-barneaud-47036a79"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a href="https://www.facebook.com/Juan.Manuel.Barneaud"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+            <a href="https://www.instagram.com/juanmanuelbarneaud/"><i class="fa-brands fa-instagram-square fa-2xl"></i></a>
+            <div onclick="showMail()"><!--  -->
+                <a href="#do-nothing"><i class="fa-solid fa-envelope fa-2xl"></i></a><!--  -->
+                <a href="mailto:juanma_bio82@hotmail.com"><p id="mail-footer">juanma_bio82@hotmail.com</p></a><!--  -->
+            </div><!--  -->
         </div>
+        <h1 class="thanks-bye"><span class="highlight">Gracias</span> por su visita<span class="highlight">!</span></h1>
     </footer>
 
     <script src="app.js"></script>

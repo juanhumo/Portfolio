@@ -106,10 +106,7 @@ div#flags{
     margin: 25px auto;
 }
 
-#start .presentation h2 span{
-    font-size: 60px;
-    color: red;
-}
+#start .presentation h2 span{font-size: 60px;}
 
 #start .presentation p{
     max-width: 700px;
@@ -169,8 +166,6 @@ div#flags{
     font-size: 38px;
     margin: 20px 0;
 }
-
-#aboutme .aboutme h2 span{color: red;}
 
 #aboutme .aboutme h3{
     font-size: 18px;
@@ -384,7 +379,7 @@ div#flags{
 #contact .form-container .message-container .message {width: 100%;}
 
 input::placeholder, textarea::placeholder{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -418,7 +413,24 @@ footer a{
     font-size: 25px;
 }
 
-
+.social a:hover{color: red;}
+.social div{
+    display: inline-block;
+    position:relative
+}
+.social p{
+    color: white;
+    background-color: red;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 10px;
+    position: absolute;   
+    top:-100%;
+    left:-80px;
+    display: none;
+}
+.social div a:last-child{font-size: 15px;}
+.social p:hover{cursor: pointer;}
 
 
 /************************************* RESPONSIVIDAD **************************************/
