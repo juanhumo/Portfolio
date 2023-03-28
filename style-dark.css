@@ -331,6 +331,9 @@ div#flags{
 
 #projects .row .project:hover img {filter: grayscale(0);}
 
+.project-info a{text-decoration: none;}
+.project-info a h4{color: red;}
+
 #projects .row .project .project-info{
     position: absolute;
     left: 0;
